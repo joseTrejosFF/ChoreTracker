@@ -1,11 +1,17 @@
 {
   "name": "react-my-chores-tracker-v2",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/server.js",
+  "description": "App for tracking time spend on chores",
+  "engines": {
+    "node": "14.17.3"
+  },
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon -r dotenv/config src/server.ts",
-    "start": "ts-node src/server.ts"
+    "postinstall": "tsc",
+    "start": "node dist/server.js",
+    "client": "npm run start --prefix src/client",
+    "deploy": "git add . && git commit -m deploy-heroku && git push heroku main"
   },
   "keywords": [],
   "author": "",
