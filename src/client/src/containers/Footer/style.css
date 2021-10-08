@@ -1,0 +1,19 @@
+.footer-container {
+  /* position: absolute;
+  bottom: 0;
+  left: 50vw; */
+
+  margin: auto;
+
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  height: 5vh;
+  
+}
+
+.footer-notes {  
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  height: 100%;
+}

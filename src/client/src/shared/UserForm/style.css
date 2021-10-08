@@ -1,0 +1,60 @@
+.user-form {
+  background-color: var(--primary-form-bg-color);
+  border-radius: 10px;
+  max-height: 3rem;
+}
+
+.user-form-focus {
+  background-color: var(--secondary-form-bg-color);
+  box-shadow: 0px 1px 3px 2px var(--primary-form-bg-color);
+}
+
+.user-input {
+  padding: 1rem 0;
+  background-color: transparent;
+  color: var(--primary-text-color);
+  border: none;
+  width: 3.5rem;
+
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.user-input::placeholder {
+  color: var(--primary-text-color);
+}
+
+.user-input:focus {
+  color: var(--secondary-text-color);
+  outline: none;
+  width: 7.5rem;
+}
+
+.user-input:focus::placeholder {
+  color: var(--secondary-text-color);
+}
+
+/* Buttons */
+
+.left-btn,
+.btn-clear-search-input {
+  padding: 0.5rem;
+  color: var(--primary-btn-color);
+  background-color: transparent;
+}
+
+.left-btn-form-focus,
+.btn-clear-search-input-form-focus {
+  color: var(--secondary-text-color);
+}
+
+.fa-times {
+  padding: 0.5rem;
+}
+
+.fa-times:hover {
+  border-radius: 10px;
+  background-color: var(--danger-color);
+  color: var(--secondary-btn-bg-color);
+}

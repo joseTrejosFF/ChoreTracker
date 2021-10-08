@@ -1,0 +1,138 @@
+.light {
+  --primary-text-color: #202124;
+  --secondary-text-color: #202124;
+
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #5f6368;
+
+  --primary-form-bg-color: #e8eaed;
+  --secondary-form-bg-color: #ffffff;
+
+  --primary-btn-color: #202124;
+  --secondary-btn-color: #e8eaed;
+
+  --primary-btn-bg-color: green;
+  --secondary-btn-bg-color: #ffffff;
+
+  --primary-border-color: #e0e0e0;
+  --secondary-border-color: #e8eaed;
+
+  --table-border-color: #5f6368;
+
+  --danger-color: red;
+  --warning-color: #f9a825;
+  --success-color: #003666;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-text-color: #e8eaed;
+    --secondary-text-color: #202124;
+
+    --primary-bg-color: #202124;
+    --secondary-bg-color: #5f6368;
+
+    --primary-form-bg-color: #5f6368;
+    --secondary-form-bg-color: #e8eaed;
+
+    --primary-btn-color: #e8eaed;
+    --secondary-btn-color: #e8eaed;
+
+    --primary-btn-bg-color: #5f6368;
+    --secondary-btn-bg-color: #878c92;
+
+    --primary-border-color: #5f6368;
+    --secondary-border-color: #e8eaed;
+
+    --table-border-color: #5f6368;
+
+    --danger-color: #7e253a;
+    --warning-color: #f9a825;
+    --success-color: #003666;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/* 
+
+Actual colors used
+#202124
+#e8eaed
+#5f6368
+#878c92
+
+DARK
+  main-container
+    background-color: #202124;
+    color: #e8eaed;
+
+  btn-panel:hover 
+    background-color: #5f6368;
+
+  card 
+    border: 2px solid #5f6368;
+
+  chore-table, tr, td, th
+   border: 1px solid #fff;
+
+  fa-search:hover   
+    background-color: #878c92;
+
+  fa-plus:hover   
+    background-color: #878c92;
+
+  btn
+   color: #e8eaed;
+
+  .btn:hover .tooltiptext   
+    background-color: #5f6368;
+    color: #e8eaed;
+
+  navbar 
+    border-bottom: 1px #5f6368 solid;
+
+
+
+  >>>> Variables Dark:
+
+    --primary-text-color: #e8eaed
+    --secondary-text-color: #202124
+
+    --primary-bg-color: #202124
+    --secondary-bg-color: #5f6368
+    
+    --primary-btn-color: #e8eaed
+    --secondary-btn-color: #5f6368
+
+    --primary-btn-bg-color: #5f6368
+    --secondary-btn-bg-color: #202124
+
+    --card-border-color: #5f6368
+
+    --table-border-color: #5f6368   
+
+    --danger-color: #7e253a 
+    --warning-color: #f9a825  
+    --success-color: #003666
+  
+
+--------------------------
+
+      Light
+  
+  background-color: ;
+  color: ;
+
+
+*/

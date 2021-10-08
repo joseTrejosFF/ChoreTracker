@@ -1,0 +1,21 @@
+.tab-selector {
+  border: 1px solid var(--secondary-border-color);
+  border-radius: 10px;
+}
+
+.tab-item {
+  color: var(--primary-btn-color);
+  padding: 1rem;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.tab-item:hover {
+  /* color: var(--primary-btn-color); */
+}
+
+.selected {
+  background-color: var(--primary-btn-bg-color);
+  border-radius: 10px;
+  color: var(--secondary-btn-color);
+}

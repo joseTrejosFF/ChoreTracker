@@ -1,0 +1,17 @@
+.chore-table-container {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  min-height: 85vh;
+  padding: 2rem 0;
+}
+.chore-table {
+  margin: 0 auto;
+}
+.chore-table,
+tr,
+td,
+th {
+  border: 1px solid var(--table-border-color);
+  border-collapse: collapse;
+  padding: 0.5rem 1rem;
+}

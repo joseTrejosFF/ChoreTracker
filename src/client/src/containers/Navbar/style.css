@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px var(--primary-border-color) solid;
+
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+
+  height: 10vh;
+}
+
+.fa-stopwatch {
+  margin: 0 0.8rem;
+  font-size: 2rem;
+}
+.main-title {
+  display: inline;
+}

@@ -1,0 +1,31 @@
+.btn-panel-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn-panel {
+  color: var(--primary-btn-color);
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 0.5rem;
+  transition-property: background-color, visibility;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.btn-panel:hover {
+  background-color: var(--primary-btn-bg-color);
+  border-radius: 10px;
+  color: var(--secondary-btn-color);
+}
+
+.btn-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.btn-delete:hover {
+  background-color: var(--danger-color);
+  color: var(--secondary-form-bg-color);
+}

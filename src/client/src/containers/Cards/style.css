@@ -1,0 +1,25 @@
+.cards-container {
+  min-height: 85vh;
+  background-color: var(--primary-bg-color);
+  padding: 1rem;
+  /* display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: var(--primary-text-color);
+  padding: 1rem 0; */
+
+}
+
+.title-card-wrapper {
+  color: var(--primary-text-color);
+  /* margin: 1rem; */
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: var(--primary-text-color);
+  padding: 1rem 0;
+  /* min-height: 100%; */
+}

@@ -1,0 +1,13 @@
+.btn-dark-mode,
+.btn-light-mode {
+  background-color: transparent;
+  color: var(--primary-btn-color);
+  padding: 1rem;
+}
+
+.btn-dark-mode:hover,
+.btn-light-mode:hover {
+  background-color: var(--primary-btn-bg-color);
+  color: var(--secondary-btn-color);
+  border-radius: 10px;
+}

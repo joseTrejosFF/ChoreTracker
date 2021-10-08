@@ -1,0 +1,11 @@
+.container {
+  background-color: var(--primary-bg-color);
+  padding: 3rem;
+}
+
+.bar-chart {
+  margin: auto;  
+  max-width: 80vw;
+  /* color: var(--primary-text-color); */
+  /* background-color: var(--primary-text-color); */
+}

@@ -1,0 +1,8 @@
+.fa-plus {
+  padding: 0.5rem;
+}
+
+.fa-plus:hover {
+  border-radius: 10px;
+  background-color: var(--secondary-btn-bg-color);
+}
