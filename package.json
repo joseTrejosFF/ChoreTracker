@@ -12,7 +12,7 @@
     "start": "node dist/server.js",
     "client": "npm run start --prefix src/client",
     "deploy": "git add . && git commit -m deploy-heroku && git push heroku main",
-    "heroku-postbuild": "npm install --prefix src/client && mv -p src/client/build dist/client "
+    "heroku-postbuild": "npm install --prefix src/client && mv src/client/build dist/client "
   },
   "keywords": [],
   "author": "",
