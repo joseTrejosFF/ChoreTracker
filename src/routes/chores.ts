@@ -1,5 +1,4 @@
 import express, { Request, Response } from "express";
-// const Chore = require('../models/Chore');
 import Chore from "../models/Chore";
 
 const router = express.Router();
