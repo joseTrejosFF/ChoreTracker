@@ -1,6 +1,8 @@
 import { connect } from "mongoose";
 
-const DB = process.env.DATABASE_URL || "";
+const DB =
+  process.env.DATABASE_URL ||
+  "mongodb+srv://mau789:wgXvdGYrkejFMNFt@cluster0.mf0db.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 export default async function connectDB(): Promise<void> {
   try {

@@ -11,7 +11,9 @@
     "postinstall": "tsc",
     "start": "node dist/server.js",
     "client": "npm run start --prefix src/client",
-    "deploy": "git add . && git commit -m deploy-heroku && git push heroku main"
+    "deploy": "git add . && git commit -m deploy-heroku && git push heroku main",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix src/client && npm run build --prefix src/client",
+    "test1": "npm run build --prefix src/client"
   },
   "keywords": [],
   "author": "",
