@@ -21,7 +21,7 @@ export const ChoreProvider = ({ children }: Props) => {
     console.log("New Chore created: ", choreName);
 
     try {
-      const newChore = await axios.post("/api/chores", { choreName });
+      const newChore = await axios.post("/api/chores/", { choreName });
       dispatch({
         type: "CREATE_CHORE",
         payload: newChore.data,
@@ -34,7 +34,7 @@ export const ChoreProvider = ({ children }: Props) => {
   // Get all Chores form DB
   const getAllChores = async () => {
     try {
-      const res = await axios.get("/api/chores");
+      const res = await axios.get("/api/chores/");
       console.log("Chores from DB: ", res.data);
 
       dispatch({
