@@ -1,22 +1,21 @@
-import * as React from 'react';
-import userReducer from './userReducer';
-import { UserCtxInterface } from './types';
-import { ChoreStateType } from '../chore/types'
+import * as React from "react";
+import userReducer from "./userReducer";
+import { UserCtxInterface } from "./types";
+import { ChoreStateType } from "../chore/types";
 
 export const UserContext = React.createContext({} as UserCtxInterface);
 
-UserContext.displayName='User.Context'
+UserContext.displayName = "User.Context";
 
 type Props = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
-export const UserProvider = ({ children }:Props) => {
-  
+export const UserProvider = ({ children }: Props) => {
   const initialState = {
-    userName: 'John',
+    userName: "John",
     isDarkTheme: true,
-    searchTerm: '',
+    searchTerm: "",
     currentSearch: null,
   };
 
@@ -24,9 +23,9 @@ export const UserProvider = ({ children }:Props) => {
 
   // All actions
   const getSearchResults = (searchString: string, chores: ChoreStateType[]) => {
-    console.log('Getting Search results');
+    // console.log('Getting Search results');
     dispatch({
-      type: 'CURRENT_SEARCH',
+      type: "CURRENT_SEARCH",
       payload: { searchString, chores },
     });
   };
@@ -34,14 +33,14 @@ export const UserProvider = ({ children }:Props) => {
   // Clear Results
   const clearSearchResults = () => {
     dispatch({
-      type: 'CLEAR_SEARCH_RESULTS',
+      type: "CLEAR_SEARCH_RESULTS",
     });
   };
 
-  const toggleDarkTheme = (flag:boolean = true) => {
-    localStorage.setItem('theme', flag ? 'dark' : 'light' )
+  const toggleDarkTheme = (flag: boolean = true) => {
+    localStorage.setItem("theme", flag ? "dark" : "light");
     dispatch({
-      type: 'TOGGLE_DARK_THEME',
+      type: "TOGGLE_DARK_THEME",
       payload: { flag },
     });
   };
@@ -57,11 +56,10 @@ export const UserProvider = ({ children }:Props) => {
           getSearchResults,
           clearSearchResults,
           toggleDarkTheme,
-        }
+        },
       }}
     >
       {children}
     </UserContext.Provider>
   );
 };
-

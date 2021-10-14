@@ -18,7 +18,7 @@ export const ChoreProvider = ({ children }: Props) => {
 
   // Create new Chore
   const createChore = async (choreName: string) => {
-    console.log("New Chore created: ", choreName);
+    // console.log("New Chore created: ", choreName);
 
     try {
       const newChore = await axios.post("/api/chores/", { choreName });
@@ -35,7 +35,7 @@ export const ChoreProvider = ({ children }: Props) => {
   const getAllChores = async () => {
     try {
       const res = await axios.get("/api/chores/");
-      console.log("Chores from DB: ", res.data);
+      // console.log("Chores from DB: ", res.data);
 
       dispatch({
         type: "GET_ALL_CHORES",
@@ -52,7 +52,7 @@ export const ChoreProvider = ({ children }: Props) => {
     startTime: string,
     endTime: string
   ) => {
-    console.log("Cleared Latest on ID: ", id);
+    // console.log("Cleared Latest on ID: ", id);
 
     const lastDuration: Omit<DurationType, "_id"> = {
       duration: getDuration(parseInt(startTime), parseInt(endTime)).toString(),
@@ -73,7 +73,7 @@ export const ChoreProvider = ({ children }: Props) => {
 
   // Set start Time
   const setStartTime = (id: string, time: string) => {
-    console.log("Started Chore ID: ", id);
+    // console.log("Started Chore ID: ", id);
     dispatch({
       type: "SET_START_TIME",
       payload: { id, time },
@@ -82,7 +82,7 @@ export const ChoreProvider = ({ children }: Props) => {
 
   // Set Stop time
   const setStopTime = async (id: string, time: string) => {
-    console.log("Stopped Chore ID: ", id);
+    // console.log("Stopped Chore ID: ", id);
     dispatch({
       type: "SET_STOP_TIME",
       payload: { id, time },
@@ -119,7 +119,7 @@ export const ChoreProvider = ({ children }: Props) => {
 
   // Delete Chore
   const deleteChore = async (id: string) => {
-    console.log("Deleted Chore ID: ", id);
+    // console.log("Deleted Chore ID: ", id);
     try {
       dispatch({
         type: "DELETE_CHORE",

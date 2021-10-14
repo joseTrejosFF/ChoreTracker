@@ -1,17 +1,17 @@
 type Props = {
-  choreName: string
-}
+  choreName: string;
+};
 
-const Title= ( {choreName}:Props ) => {
+const Title = ({ choreName }: Props) => {
   const handleRename = () => {
-    console.log('double clicked');
+    // console.log('double clicked');
   };
   return (
     <div>
       <h3
         onDoubleClick={handleRename}
         // onClick={handleRename}
-        className='chore-name'
+        className="chore-name"
       >
         {choreName}
       </h3>

@@ -1,8 +1,6 @@
 import express from "express";
 import connectDB from "./config/db";
 
-console.log("process.env.PORT: ", process.env.PORT);
-
 const app = express();
 const PORT = process.env.PORT || 3333;
 

@@ -1,15 +1,16 @@
 .navbar {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.navbar-items {
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 1.5rem;
   padding: 1rem 0;
-  border-bottom: 1px var(--primary-border-color) solid;
-
-  background-color: var(--primary-bg-color);
-  color: var(--primary-text-color);
-
   height: 10vh;
+  border-bottom: 1px var(--primary-border-color) solid;
 }
 
 .fa-stopwatch {
@@ -18,4 +19,27 @@
 }
 .main-title {
   display: inline;
+}
+
+.mobile-menu-container {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-items {
+    display: none;
+  }
+
+  .mobile-menu-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+  }
+
+  .btn-mobile-menu {
+    font-size: 1.5rem;
+    color: var(--primary-text-color);
+    background-color: transparent;
+  }
 }

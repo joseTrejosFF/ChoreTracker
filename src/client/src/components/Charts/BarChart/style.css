@@ -4,8 +4,16 @@
 }
 
 .bar-chart {
-  margin: auto;  
+  margin: auto;
   max-width: 80vw;
-  /* color: var(--primary-text-color); */
-  /* background-color: var(--primary-text-color); */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 3rem 0;
+  }
+
+  .bar-chart {
+    width: 100vw;
+  }
 }
