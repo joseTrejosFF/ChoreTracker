@@ -1,16 +1,16 @@
 # Chore Tracker
 
-This is a personal project that I made to keep track of how much time is spend doing chores at home.
+This is a personal project that I made to keep track of how much time I spend doing chores at home.
 
 **Live Demo:** [CLICK HERE](http://ec2-54-226-183-237.compute-1.amazonaws.com/)
 
 ## Screenshots
 
 **Main section in dark mode**
-![Main section](LINK)
+![Main section](https://raw.githubusercontent.com/jose-506/ChoreTracker/main/src/client/src/assets/allCardsDark.png)
 
 **Charts in light mode**
-![Chart Section](LINK)
+![Chart Section](https://raw.githubusercontent.com/jose-506/ChoreTracker/main/src/client/src/assets/chartLightMode1.png)
 
 ## Getting started
 
@@ -32,7 +32,7 @@ npm install
 - Set a DATABASE_URL (MongoDB Atlas connection string) on .env.
 
 ```
-DATABASE_URL=mongodb+srv://<username>:<password@clusterName/databasename...
+DATABASE_URL=mongodb://<user>:<password>@<connection_url>
 ```
 
 - Start the back-end and front-end
@@ -68,4 +68,4 @@ npm run client
 
 ## License
 
-Licensed under the [MIT](LICENSE) License.
+Licensed under the [MIT](LICENSE.md) License.
