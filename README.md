@@ -6,10 +6,12 @@ This is a personal project that I made to keep track of how much time I spend do
 
 ## Screenshots
 
-**Main section in dark mode**
+### Main section in dark mode
+
 ![Main section](https://raw.githubusercontent.com/jose-506/ChoreTracker/main/src/client/src/assets/allCardsDark.png)
 
-**Charts in light mode**
+### Charts in light mode
+
 ![Chart Section](https://raw.githubusercontent.com/jose-506/ChoreTracker/main/src/client/src/assets/chartLightMode1.png)
 
 ## Getting started
@@ -54,13 +56,13 @@ npm run client
 
 | Name           | Description                                                      |
 | -------------- | ---------------------------------------------------------------- |
-| scr/           | Contains back-end and front-end source code                      |
-| scr/client/    | Contains the front-end files                                     |
-| scr/client/src | Contains the front-end source code                               |
-| scr/config/    | Contains the MongoDB connection and authentication-url           |
-| scr/models/    | Contains the MongoDB schema                                      |
-| scr/routes/    | Contains the http methods for CRUD operations                    |
-| scr/server.ts  | Entry point to the express app                                   |
+| src/           | Contains the back-end and front-end source code                  |
+| src/client/    | Contains the front-end files                                     |
+| src/client/src | Contains the front-end source code                               |
+| src/config/    | Contains the MongoDB connection and authentication-url           |
+| src/models/    | Contains the MongoDB schema                                      |
+| src/routes/    | Contains the http methods for CRUD operations                    |
+| src/server.ts  | Entry point to the express app                                   |
 | dist/          | Contains the output from the TypeScript build                    |
 | node_modules   | Contains all the npm dependencies                                |
 | package.json   | File that contains the npm dependencies as well as build scripts |
